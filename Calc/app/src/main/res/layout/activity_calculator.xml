@@ -1,7 +1,201 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="8"
+    android:baselineAligned="false">
 
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:id="@+id/result"
+        android:layout_weight="3"
+        android:gravity="center_vertical|end"
+        tools:text="0"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:maxLines = "100"
+        android:scrollbars = "vertical"
+        android:visibility="visible"
+        android:textColor="@color/colorPrimary"
+        tools:textSize="40sp"
+        android:textSize="40sp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:weightSum="4">
+
+        <Button
+            style="@style/AppTheme.Button"
+            android:id="@+id/clear"
+            android:width="1dp"
+            android:layout_weight="3"
+            android:text="@string/clear"
+            android:backgroundTint="@color/colorAccent"
+            />
+
+
+        <Button
+            style="@style/AppTheme.Button"
+            android:id="@+id/add"
+            android:layout_weight="1"
+            android:text="@string/add"
+            android:backgroundTint="@color/colorPrimary"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:weightSum="4" >
+
+        <Button
+
+            style="@style/AppTheme.Button"
+            android:id="@+id/d1"
+            android:layout_weight="1"
+            android:text="@string/d1"
+            />
+
+        <Button
+            style="@style/AppTheme.Button"
+            android:id="@+id/d2"
+            android:layout_weight="1"
+            android:text="@string/d2"
+            />
+
+        <Button
+            style="@style/AppTheme.Button"
+            android:id="@+id/d3"
+            android:layout_weight="1"
+            android:text="@string/d3"
+            />
+
+        <Button
+            style="@style/AppTheme.Button"
+            android:id="@+id/sub"
+            android:layout_weight="1"
+            android:text="@string/sub"
+            android:backgroundTint="@color/colorPrimary"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:weightSum="4" >
+
+        <Button
+            style="@style/AppTheme.Button"
+            android:id="@+id/d4"
+            android:layout_weight="1"
+            android:text="@string/d4"
+            />
+
+        <Button
+            style="@style/AppTheme.Button"
+            android:id="@+id/d5"
+            android:layout_weight="1"
+            android:text="@string/d5"
+            />
+
+        <Button
+            style="@style/AppTheme.Button"
+            android:id="@+id/d6"
+            android:layout_weight="1"
+            android:text="@string/d6"
+            />
+
+        <Button
+            style="@style/AppTheme.Button"
+            android:id="@+id/mul"
+            android:layout_weight="1"
+            android:text="@string/mul"
+            android:backgroundTint="@color/colorPrimary"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:weightSum="4" >
+
+        <Button
+            style="@style/AppTheme.Button"
+            android:id="@+id/d7"
+            android:layout_weight="1"
+            android:text="@string/d7"
+            />
+
+        <Button
+            style="@style/AppTheme.Button"
+            android:id="@+id/d8"
+            android:layout_weight="1"
+            android:text="@string/d8"
+            />
+
+        <Button
+            style="@style/AppTheme.Button"
+            android:id="@+id/d9"
+            android:layout_weight="1"
+            android:text="@string/d9"
+            />
+
+        <Button
+            style="@style/AppTheme.Button"
+            android:id="@+id/div"
+            android:layout_weight="1"
+            android:text="@string/div"
+            android:backgroundTint="@color/colorPrimary"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:weightSum="4" >
+
+        <Button
+            style="@style/AppTheme.Button"
+            android:id="@+id/d0"
+            android:layout_weight="2"
+            android:text="@string/d0"
+            />
+
+        <Button
+            style="@style/AppTheme.Button"
+            android:id="@+id/dot"
+            android:layout_weight="1"
+            android:text="@string/dot"
+            />
+
+        <Button
+            style="@style/AppTheme.Button"
+            android:id="@+id/eqv"
+            android:layout_weight="1"
+            android:text="@string/eqv"
+            android:backgroundTint="@color/colorPrimaryDark"
+            />
+
+    </LinearLayout>
 </LinearLayout>
